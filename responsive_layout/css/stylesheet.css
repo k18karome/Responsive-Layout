@@ -1,0 +1,98 @@
+/*Main Styles*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: lightgrey;
+}
+
+.name {
+	text-align: center;
+}
+
+.nav {
+	margin-top:1.25em;
+}
+
+.nav a {
+	display:flex;
+	align-items:center;
+	font-size:1em;
+	font-weight:300;
+	text-align: center;
+	padding:2px;
+	width:95vw;
+}
+a:link { 
+	text-decoration: none; 
+	color:black;
+}
+
+a:visited { 
+	text-decoration: none; 
+	color:black;
+}
+
+a:hover { 
+	text-decoration: none; 
+	color:white;
+}
+
+a:active { 
+	text-decoration: none; 
+	color:black;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.item {
+	background-color: whitesmoke;
+	margin:1px;
+}
+
+.profile-pic {
+	width:70vw;
+	height:125px;
+	text-align:center;
+	margin:3em 5em 0 5em;
+}
+
+p {
+	margin:0;
+	padding:2em;
+	text-align:center;
+}
+
+.img {
+	width:80vw;
+	height:160px;
+	text-align:center;
+}
+
+h2 {
+	font-size:1em;
+	text-align:center;
+}
+
+h3 {
+	font-size:1.5em;
+	text-align: center;
+}
+/*Flexbox*/
+
+body {
+	display:flex;
+	flex-direction: column;
+}
+
+.main-header{
+	display:flex;
+	flex-direction: column;
+}
+
+
+
+
