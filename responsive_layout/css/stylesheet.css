@@ -38,6 +38,7 @@ header {
 .nav {
 	display:flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .name {
@@ -130,5 +131,28 @@ h3 {
 	color:#900404;
 }
 
+.footer-nav {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-top: 1px solid #ebecec;
+	margin-top:1.5em;
+}
+
+.bot-items {
+	padding:1em;
+	font-weight:bold;
+	font-size: .9em;
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width:768px) {
 
 
+}
+
+@media (min-width:1024px) {
+
+
+}
