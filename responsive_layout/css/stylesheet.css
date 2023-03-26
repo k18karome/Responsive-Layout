@@ -4,7 +4,40 @@
 }
 
 body {
-	background-color: lightgrey;
+	font-family: 'Barlow', sans-serif;
+}
+
+a:link { 
+	text-decoration: none; 
+	color:black;
+}
+
+a:visited { 
+	text-decoration: none; 
+	color:black;
+}
+
+
+a:active { 
+	text-decoration: none; 
+	color:black;
+}
+
+ul, li {
+	list-style-type: none;
+	padding:0;
+	margin:0;
+}
+
+header {
+	background-color: #fafafa;
+	margin:0;
+}
+
+.main-header, 
+.nav {
+	display:flex;
+	flex-direction: column;
 }
 
 .name {
@@ -16,36 +49,18 @@ body {
 }
 
 .nav a {
-	display:flex;
-	align-items:center;
-	font-size:1em;
+	display:block;
+	font-size:1.125em;
 	font-weight:300;
 	text-align: center;
-	padding:2px;
-	width:95vw;
-}
-a:link { 
-	text-decoration: none; 
-	color:black;
+	padding:.4em;
+	border-bottom: 1px solid #ebecec;
 }
 
-a:visited { 
-	text-decoration: none; 
-	color:black;
-}
-
-a:hover { 
-	text-decoration: none; 
-	color:white;
-}
-
-a:active { 
-	text-decoration: none; 
-	color:black;
-}
-
-ul {
-	list-style-type: none;
+.nav a:hover {
+	color:#900404;
+	text-decoration: none;
+	border-bottom-color: #400f0e;
 }
 
 .item {
@@ -54,45 +69,66 @@ ul {
 }
 
 .profile-pic {
-	width:70vw;
 	height:125px;
-	text-align:center;
-	margin:3em 5em 0 5em;
+	align-self:center;
+	margin-top:3em;
+	margin-bottom:0;
 }
+
+.intro-p {
+	padding:2em;
+}
+
+#portfolio,
+#contact {
+	display:flex;
+	flex-direction: column;
+}
+
+/*.marketing-div, .search-div, .travel-div, .map-div, .gallery-div, .calculator-div {
+	display:flex;
+	flex-direction: column;
+}*/
 
 p {
 	margin:0;
-	padding:2em;
+	padding-top:0;
+	padding-bottom:2em;
 	text-align:center;
 }
 
-.img {
-	width:80vw;
+img {
 	height:160px;
-	text-align:center;
+	align-self:center;
 }
 
 h2 {
 	font-size:1em;
 	text-align:center;
+	padding:2em;
+	margin:0;
 }
 
 h3 {
 	font-size:1.5em;
 	text-align: center;
 }
-/*Flexbox*/
 
-body {
+.contact-info {
 	display:flex;
-	flex-direction: column;
+	flex-direction:column;
 }
 
-.main-header{
-	display:flex;
-	flex-direction: column;
+
+.items {
+	align-self: center;
+	padding:.5em;
+	font-size:1.125em;
 }
 
+.contact-a:hover {
+	color:#900404;
+}
 
 
 
