@@ -179,18 +179,36 @@ footer a:hover {
 /*MEDIA QUERIES*/
 
 @media screen and (min-width:768px) {
-	.nav {
+	.main-header ,.nav {
 		display:flex;
 		flex-direction:row;
-		justify-content: center;
+		justify-content:center;
+		width:100vw;
+	}
+	.name {
+		width:100vw;
 	}
 	.nav a {
-		display:block;
+		flex:1;
 		font-size:1.125em;
 		font-weight:300;
 		text-align: center;
 		padding:.4em;
 		border-bottom: none;
+		margin-bottom: 4em;
+	}
+	.profile-pic {
+		order:1;
+		align-self: center;
+		margin-top:0;
+		margin-bottom:3em;
+	}
+	.intro-p {
+		text-align: left;
+		align-self: center;
+		width:60vw;
+		padding:2em;
+		margin-bottom:3em;
 	}
 	#portfolio {
 		display:flex;
