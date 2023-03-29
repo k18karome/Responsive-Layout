@@ -38,7 +38,6 @@ header {
 .nav {
 	display:flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 }
 
 .name {
@@ -179,20 +178,16 @@ footer a:hover {
 /*MEDIA QUERIES*/
 
 @media screen and (min-width:768px) {
-	.main-header ,.nav {
-		display:flex;
+	.main-header ,.nav , #top-nav {
 		flex-direction:row;
+		flex-wrap: wrap;
 		justify-content:center;
-		width:100vw;
-	}
-	.name {
-		width:100vw;
+		width: 100vw;
 	}
 	.nav a {
+		display:inline;
+		background-color: none;
 		flex:1;
-		font-size:1.125em;
-		font-weight:300;
-		text-align: center;
 		padding:.4em;
 		border-bottom: none;
 		margin-bottom: 4em;
@@ -200,15 +195,14 @@ footer a:hover {
 	.profile-pic {
 		order:1;
 		align-self: center;
-		margin-top:0;
-		margin-bottom:3em;
+		margin:1.25em 2em 3em 2em;
 	}
 	.intro-p {
 		text-align: left;
 		align-self: center;
 		width:60vw;
 		padding:2em;
-		margin-bottom:3em;
+		margin:0 2em 3em 0;
 	}
 	#portfolio {
 		display:flex;
@@ -230,6 +224,12 @@ footer a:hover {
 }
 
 @media screen and (min-width:1024px) {
-
+	#top-nav {
+		flex-wrap:nowrap;
+		justify-content: space-between;
+	}
+	.nav {
+		width:30vw;
+	}
 
 }
