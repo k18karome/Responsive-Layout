@@ -131,6 +131,8 @@ h3 {
 }
 
 footer {
+	display:flex;
+	flex-direction: column;
 	background-color: #fafafa;
 	margin:0;
 }
@@ -184,6 +186,9 @@ footer a:hover {
 		justify-content:center;
 		width: 100vw;
 	}
+	.item {
+		background-color: none;
+	}
 	.nav a {
 		display:inline;
 		background-color: none;
@@ -220,6 +225,11 @@ footer a:hover {
 	}
 	p {
 		padding-bottom:0;
+	}
+	.contact-p {
+		align-self: center;
+		width:55vw;
+		margin-bottom: 2em;
 	}
 }
 
