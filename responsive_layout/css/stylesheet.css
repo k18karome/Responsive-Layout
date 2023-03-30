@@ -30,12 +30,12 @@ ul, li {
 }
 
 header {
-	background-color: #fafafa;
+	background-color: #d9b6a7;
 	margin:0;
 }
 
 .main-header, 
-.nav {
+.nav, nav {
 	display:flex;
 	flex-direction: column;
 }
@@ -133,7 +133,7 @@ h3 {
 footer {
 	display:flex;
 	flex-direction: column;
-	background-color: #fafafa;
+	background-color: #d9b6a7;
 	margin:0;
 }
 
@@ -180,18 +180,17 @@ footer a:hover {
 /*MEDIA QUERIES*/
 
 @media screen and (min-width:768px) {
-	.main-header ,.nav , #top-nav {
+	.main-header ,.nav , nav {
 		flex-direction:row;
 		flex-wrap: wrap;
 		justify-content:center;
 		width: 100vw;
 	}
 	.item {
-		background-color: none;
+		background-color: transparent;
 	}
 	.nav a {
 		display:inline;
-		background-color: none;
 		flex:1;
 		padding:.4em;
 		border-bottom: none;
@@ -234,7 +233,7 @@ footer a:hover {
 }
 
 @media screen and (min-width:1024px) {
-	#top-nav {
+	nav {
 		flex-wrap:nowrap;
 		justify-content: space-between;
 	}
