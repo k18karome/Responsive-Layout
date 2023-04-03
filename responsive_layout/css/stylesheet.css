@@ -42,6 +42,8 @@ header {
 
 .name {
 	text-align: center;
+	font-style: normal;
+	font-weight:600;
 }
 
 .nav {
@@ -51,7 +53,8 @@ header {
 .nav a {
 	display:block;
 	font-size:1.125em;
-	font-weight:300;
+	font-style: normal;
+	font-weight:600;
 	text-align: center;
 	padding:.4em;
 	border-bottom: 1px solid #ebecec;
@@ -113,7 +116,7 @@ h2 {
 
 h3 {
 	font-size:1.5em;
-	font-weight: 600;
+	font-weight:600;
 	text-align: center;
 }
 
@@ -139,9 +142,12 @@ footer {
 	margin:0;
 }
 
-.footer-nav {
+.footer-nav, #bot-footer {
 	display:flex;
 	flex-direction: row;
+}
+
+#bot-footer {
 	justify-content: space-between;
 	border-top: 1px solid #ebecec;
 	margin-top:1.5em;
@@ -150,36 +156,48 @@ footer {
 footer a:link { 
 	text-decoration: none; 
 	color:black;
-	font-weight: bold;
+	font-style: normal;
+	font-weight:600;
 }
 
 footer a:visited { 
 	text-decoration: none; 
 	color:black;
-	font-weight: bold;
+	font-style: normal;
+	font-weight:600;
 }
 
 
 footer a:active { 
 	text-decoration: none; 
 	color:black;
-	font-weight: bold;
+	font-style: normal;
+	font-weight:600;
 }
 
 footer a:hover {
 	color:#900404;
 	text-decoration: none;
 	border-bottom: 1px solid #400f0e;
-	font-weight: bold;
+	font-style: normal;
+	font-weight:600;
 }
 
-.bot-items {
+.bot-items, .bot-name {
+	margin:1.5em;
 	padding:1em;
-	font-weight:bold;
+	font-style: normal;
+	font-weight:600;
 	font-size: .9em;
 }
 
 /*MEDIA QUERIES*/
+
+@media screen and (max-width:768px) {
+	.bot-home, .bot-port, .bot-contact {
+		display:none;
+	}
+}
 
 @media screen and (min-width:768px) {
 	.main-header ,.nav , nav {
@@ -231,6 +249,13 @@ footer a:hover {
 		align-self: center;
 		width:55vw;
 		margin-bottom: 2em;
+	}
+	.bot-items, .bot-name {
+		margin:1.2em 0;
+		font-size: 1em;
+	}
+	.bot-send {
+		display:none;
 	}
 }
 
