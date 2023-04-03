@@ -193,7 +193,17 @@ footer a:hover {
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width:768px) {
+@media screen and (min-width:481px) {
+	.bot-send {
+		display:none;
+	}
+	.bot-items, .bot-name {
+		margin:1.2em 0;
+		padding:.4em;
+	}
+}
+
+@media screen and (max-width:481px) {
 	.bot-home, .bot-port, .bot-contact {
 		display:none;
 	}
@@ -254,9 +264,6 @@ footer a:hover {
 		margin:1.2em 0;
 		font-size: 1em;
 	}
-	.bot-send {
-		display:none;
-	}
 }
 
 @media screen and (min-width:1024px) {
@@ -265,7 +272,7 @@ footer a:hover {
 		justify-content: space-between;
 	}
 	.nav {
-		width:30vw;
+		width:35vw;
 	}
 	.name {
 		margin-left: .4em;
