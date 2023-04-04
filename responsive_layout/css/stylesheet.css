@@ -47,7 +47,7 @@ header {
 }
 
 .nav {
-	margin-top:1.25em;
+	margin:1.25em 0;
 }
 
 .nav a {
@@ -83,7 +83,7 @@ header {
 }
 
 #portfolio,
-#contact {
+#contact, #skills {
 	display:flex;
 	flex-direction: column;
 }
@@ -184,7 +184,7 @@ footer a:hover {
 }
 
 .bot-items, .bot-name {
-	margin:1.5em;
+	margin:1em;
 	padding:1em;
 	font-style: normal;
 	font-weight:600;
@@ -204,7 +204,7 @@ footer a:hover {
 }
 
 @media screen and (max-width:481px) {
-	.bot-home, .bot-port, .bot-contact {
+	.bot-home, .bot-port, .bot-contact, .bot-skills {
 		display:none;
 	}
 }
@@ -238,13 +238,13 @@ footer a:hover {
 		padding:2em;
 		margin:1em 2em 3em 0;
 	}
-	#portfolio {
+	#portfolio, #skills {
 		display:flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-	.portfolio-head {
+	.portfolio-head, .skills-head {
 		width:100vw;
 	}
 	div {
